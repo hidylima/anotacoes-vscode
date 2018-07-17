@@ -103,8 +103,8 @@ ou/e extensão
 ### JavaScript (ES6) code snippets
 
 #### Funções 
-- `anfn` função anônima
-- `nfn` função nomeada (atribuída a uma const)
+- `anfn` arrow function anônima
+- `nfn` arrow function nomeada (atribuída a uma const)
 - `prom` cria uma nova promise sendo retornada 
 - `thenc` cria um .then e .catch
 - `clg` console.log()
@@ -116,3 +116,13 @@ definições de snippets do usuário
 #### My Custom JavaScript Snippets 
 - `c + tab` declara uma const
 - `L + tab` declara uma let
+- `log + tab` declara um console.log()
+- `fun + tab` declara uma ES5 function 
+- `afun + tab` declara uma arrow function anônima 
+- `nafun + tab` declara uma arrow function nomeada (atribuída à uma  
+const) 
+
+#### My Custom Markdown Snippets 
+- **Para que o comando funcione, é necessário que o gatilho  
+com o snippet seja mostrado e selecionado antes, com `ctrl + space`**
+- `jscode + ctrl + space + tab` declara um bloco de código javascript
