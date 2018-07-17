@@ -13,6 +13,9 @@
 ## Invocar Intellisense
 - `ctrl + space` 
 
+## Reposicionando a visualização vertical da linha, mantendo o cursor no mesmo local 
+- `ctrl + up/down arrow` 
+
 ## Copiando uma linha inteira sem copy e paste 
 - `shift + alt + up/down arrow`
 
@@ -43,10 +46,10 @@
 
 ## Command Palette
 - `ctrl + shift + p`
+- Aumenta a produtividade 
 - Permite fazer qualquer coisa no Vscode 
 - `reindent` - conserta a indentação das linhas selecionadas
 - `change lang` - muda a linguagem do arquivo 
-- Aumenta a produtividade 
 
 ## Visualizando todos os métodos, classes e propriedades de um arquivo JS
 - `@`, no quick open (ctrl + p) 
@@ -59,7 +62,7 @@ com o botão direito e escolher 'Peek Definition'
 - `ctrl + shift + alt + up/down arrow`
 
 ## Selecionando todas as ocorrências de uma string 
-- `ctrl + shift + l` com uma string selecionada **ou com o cursor**.  
+- `ctrl + shift + L` com uma string selecionada **ou com o cursor**.  
 Todas as strings similares no documento serão selecionadas 
 
 ## Visualizando o elemento HTML de um seletor CSS 
@@ -83,10 +86,33 @@ através do number especificado
 - `f2` com o cursor no nome. Isso irá renomear todas as  
 instâncias e referências nos documentos do projeto. 
 
-## Abrir menu de extensões 
+## Visualizar menu de extensões 
 - `ctrl + shift + x`
 
 ## Instalando snippets e outras extensões 
 - Com o menu de extensões aberto, digitar o nome da linguagem  
 ou/e extensão 
 - Intellisense reconhece snippets instalados
+
+## Snippets 
+
+### VsCode snippets
+- Começar a digitar o comando e selecioná-lo, com up/down arrow 
+- `tab` navega entre os parâmetros 
+
+### JavaScript (ES6) code snippets
+
+#### Funções 
+- `anfn` função anônima
+- `nfn` função nomeada (atribuída a uma const)
+- `prom` cria uma nova promise sendo retornada 
+- `thenc` cria um .then e .catch
+- `clg` console.log()
+
+### User-defined snippets 
+- `ctrl + shift + p + 'snippets' + 'lang. name'` Abre o painel de  
+definições de snippets do usuário 
+
+#### My Custom JavaScript Snippets 
+- `c + tab` declara uma const
+- `L + tab` declara uma let
