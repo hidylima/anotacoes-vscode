@@ -2,6 +2,24 @@
 
 ## Emmet
 - Já vem instalado
+- É possível habilitá-lo em 'settings > emmet.triggerExpansionOnTab' 
+
+### Sintaxe 
+- `>` - filho
+- `+` - irmão
+- `^` - um nível acima 
+`div>p>span+em^bq`:
+
+```html
+<div>
+  <p><span></span><em></em></p>
+  <blockquote></blockquote>
+</div>
+```
+
+### HTML Emmet Expressions 
+
+### CSS Emmet Expressions 
 
 ## Abrindo o VsCode no terminal 
 - `code` abre o editor
@@ -121,8 +139,12 @@ definições de snippets do usuário
 - `afun + tab` declara uma arrow function anônima 
 - `nafun + tab` declara uma arrow function nomeada (atribuída à uma  
 const) 
+- `r + tab` declara um `return` 
+- `ts + tab` declara uma template string 
 
 #### My Custom Markdown Snippets 
 - **Para que o comando funcione, é necessário que o gatilho  
 com o snippet seja mostrado e selecionado antes, com `ctrl + space`**
 - `jscode + ctrl + space + tab` declara um bloco de código javascript
+- `h1c + ctrl + space + tab` declara um bloco h1 com código no início 
+- `h2c + ctrl + space + tab` declara um bloco h2 com código no início 
