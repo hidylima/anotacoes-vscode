@@ -4,10 +4,20 @@
 - Já vem instalado
 - É possível habilitá-lo em 'settings > emmet.triggerExpansionOnTab' 
 
-### Sintaxe e exemplos 
+### HTML Emmet Expressions 
 - `>` - filho
 - `+` - irmão
 - `^` - volta um nível acima
+- `.` - classe
+  - `.nomeDaClasse` declarauma `div`, por padrão
+  - Pode haver mais de uma por elemento
+  - Pode ser declarado com id's
+- `#` - id
+  - `#nomeDoId` declara uma `div`, por padrão
+  - Pode haver mais de um por elemento
+  - Pode ser declarado com classes 
+- `[attr1="" attr2=""]` declara atributo(s) ao elemento
+- `{text}` insere texto no elemento
 
 Exemplo voltando dois níveis acima - `div>p>span+em^^bq`:
 
@@ -60,11 +70,23 @@ Exemplo de agrupamentos aninhados - `div>(header>nav>(li+div)*3)+footer+p`:
 </div>
 ```
 
-- `*` multiplica o elemento anterior quantas vezes 
-forem especificadas
+- `*` multiplica o elemento  quantas vezes forem especificadas
 - `$` numera nomes de atributos de elementos multiplicados 
+  - Múltiplos `$` inserem `0` antes do número 
+  - `@3` após o cifrão declara à partir do número especificado 
+  - `@-` após o cifrão declara os números em ordem decrescente 
 
-### HTML Emmet Expressions 
+Exemplos de atributos numerados - `ul>li.item-menu.item-$*5`:
+
+```html
+<ul>
+    <li class="item-menu item-1"></li>
+    <li class="item-menu item-2"></li>
+    <li class="item-menu item-3"></li>
+    <li class="item-menu item-4"></li>
+    <li class="item-menu item-5"></li>
+  </ul>
+```
 
 ### CSS Emmet Expressions 
 
@@ -181,13 +203,14 @@ definições de snippets do usuário
 #### My Custom JavaScript Snippets 
 - `nafun + tab` declara uma arrow function nomeada (atribuída à uma  
 const) 
+- `afun + tab` declara uma arrow function anônima 
+- `fun + tab` declara uma ES5 function 
+- `r + tab` declara um `return` 
 - `c + tab` declara uma const
 - `L + tab` declara uma let
-- `log + tab` declara um console.log()
-- `fun + tab` declara uma ES5 function 
-- `afun + tab` declara uma arrow function anônima 
-- `r + tab` declara um `return` 
 - `ts + tab` declara uma template string 
+- `log + tab` declara um console.log()
+- `bc + tab` declara um bloco de código 
 
 #### My Custom Markdown Snippets 
 - **Para que o comando funcione, é necessário que o gatilho  
@@ -195,5 +218,6 @@ com o snippet seja mostrado e selecionado antes, com `ctrl + space`**
 - `jsc + ctrl + space + tab` declara um bloco de código javascript
 - `hc + ctrl + space + tab` declara um bloco de código HTML 
 - `cc + ctrl + space + tab` declara um bloco de código CSS 
+- `ic + space + tab` declara um código inline 
 - `h1c + ctrl + space + tab` declara um bloco h1 com código no início 
 - `h2c + ctrl + space + tab` declara um bloco h2 com código no início 
