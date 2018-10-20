@@ -1,5 +1,15 @@
 # anotacoes-vscode
 
+## [Integrando cmder como terminal do vscode](https://code.visualstudio.com/docs/editor/integrated-terminal#_can-i-use-cmders-shell-with-the-terminal-on-windows)
+```javascript
+ // settings.json
+{
+  // ...
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": ["/K", "C:\\Users\\roger\\cmder\\vscode.bat"]
+}
+```
+
 ## [Emmet](https://docs.emmet.io/abbreviations/syntax/)
 - Já vem instalado
 - É possível habilitá-lo em 'settings > emmet.triggerExpansionOnTab' 
