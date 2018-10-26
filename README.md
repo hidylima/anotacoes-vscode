@@ -10,6 +10,10 @@
 }
 ```
 
+## Abas do terminal
+- Abrir uma 2ª aba no terminal: `ctrl + ]`
+- alternar entre abas: `alt + left / right`
+
 ## [Emmet](https://docs.emmet.io/abbreviations/syntax/)
 - Já vem instalado
 - É possível habilitá-lo em 'settings > emmet.triggerExpansionOnTab' 
